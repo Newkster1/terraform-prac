@@ -39,9 +39,9 @@ resource "aws_dynamodb_table" "terraform_locks" {
 terraform {
   backend "s3" {
     # Replace this with your bucket name!
-    bucket         = "kevin-newk-terraform-state"
-    key            = "workspaces-example/terraform.tfstate"
-    region         = "us-east-2"
+    bucket = "kevin-newk-terraform-state"
+    key    = "workspaces-example/terraform.tfstate"
+    region = "us-east-2"
 
     # Replace this with your DynamoDB table name!
     dynamodb_table = "terraform-up-and-running-locks"
